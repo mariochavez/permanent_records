@@ -273,7 +273,3 @@ module PermanentRecords
     end
   end
 end
-
-ActiveSupport.on_load(:active_record) do
-  ActiveRecord::Base.send :include, PermanentRecords::ActiveRecord
-end
